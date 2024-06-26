@@ -8,20 +8,8 @@ import { useRouter } from 'next/navigation';
 
 const NavbarActions = () => {
 
-  const [isMounted, setIsMounted] = React.useState(false);
-
-  useEffect(() => {
-    return () => {
-      setIsMounted(true)
-    };
-  }, []);
-
   const cart = useCartStore();
   const router = useRouter();
-
-  if (!isMounted) {
-    return null;
-  }
 
   return (
     <div className='ml-auto flex items-center gap-x-4'>
