@@ -20,7 +20,9 @@ const Navbar = async () => {
                         <p className="font-bold text-xl">STORE</p>
                     </Link>
                     <MainNav data={categories} />
-                    <NavbarActions />
+                    <div>
+                        <NavbarActions />
+                    </div>
                 </div>
             </Container>
         </div>
